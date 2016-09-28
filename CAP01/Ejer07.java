@@ -1,9 +1,10 @@
 /**
- * Realiza una piámide hueca (se debe ver solo el contorno hecho con asteriscos)
+ * Igual que el programa anterior, pero esta vez la pirámide estará hueca (se
+ * debe ver únicamente el contorno hecho con asteriscos).
  * @author Margarita Benitez
  */
 
-public class Ejercicio07 { // Clase principal
+public class Ejer07 { // Clase principal
   public static void main(String[] args) {
    
     

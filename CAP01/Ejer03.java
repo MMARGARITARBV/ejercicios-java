@@ -8,18 +8,18 @@
 
 public class Ejer03 { // Clase principal
   public static void main(String[] args) {
-    System.out.println("PALABRAS EN INGLES Y CASTELLANO"); //formateado de texto izq (-)
-      System.out.printf("%-10s      %-12s  %-12s \n", 				"INGLES","CASTELLANO","PAJARITO");
-      System.out.println("Bee     \t" + "Abeja");
-      System.out.println("Eagle   \t" + "Aguila");
-      System.out.println("Moose   \t" + "Alce");
-      System.out.println("Clams   \t" + "Almejas");
-      System.out.println("Lark    \t" + "Alondra");
-      System.out.println("Anchovy \t" + "Anchoa");
-      System.out.println("Eel     \t" + "Anguila");
-      System.out.println("Antelope\t" + "Antilope");
-      System.out.println("Spide   \t" + "Arana");
-      System.out.println("Squirrel\t" + "Ardilla");
+    //System.out.println("  PALABRAS EN INGLES Y CASTELLANO  "); //formateado de texto izq (%-) a la derecha %. Especificar tipo de dato
+      System.out.printf("%-8s %-8s \n", "INGLES" , "CASTELLANO");// Los espacios entre los % cuentan como espacio más.
+      System.out.printf("%-8s %-8s \n","Bee" , "Abeja");
+      System.out.printf("%-8s %-8s \n","Eagle" , "Aguila");
+      System.out.printf("%-8s %-8s \n","Moose" , "Alce");
+      System.out.printf("%-8s %-8s \n","Clams" , "Almejas");
+      System.out.printf("%-8s %-8s \n","Lark" , "Alondra");
+      System.out.printf("%-8s %-8s \n","Anchovy" , "Anchoa");
+      System.out.printf("%-8s %-8s \n","Eel" , "Anguila");
+      System.out.printf("%-8s %-8s \n","Antelope" , "Antilope");
+      System.out.printf("%-8s %-8s \n","Spide" , "Arana");
+      System.out.printf("%-8s %-8s \n","Squirrel" , "Ardilla");
    
   }
 }

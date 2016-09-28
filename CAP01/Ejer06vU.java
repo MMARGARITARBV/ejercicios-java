@@ -2,7 +2,7 @@
  * @author Margarita Benitez
  */
 
-public class Ejercicio06vU { // Clase principal
+public class Ejer06vU { 
   public static void main(String[] args) {
    
     
