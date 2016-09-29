@@ -9,7 +9,7 @@
 public class Ejer02 {
   public static void main(String[] args) {
 
-    String nombre = ("Margarita Benitez Vargas");
+    String nombre = ("Margarita Benitez V");
     
     System.out.println("Mi nombre es: " + nombre);
   }

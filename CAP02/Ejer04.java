@@ -8,11 +8,11 @@
 public class Ejer04 {
   public static void main(String[] args) {
 
-    int    euro = 100 ;
+    double euro = 125 ;
     double total = (euro * 166.38);
     
     System.out.println("CONVERSOR DE EUROS A PESETAS \n "  );
-    System.out.println( euro + " Euros es = " + total + " Pesetas");
+    System.out.println( euro + " Euros es = " + total + " Pesetas ");
   
   }
 }

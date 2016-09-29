@@ -10,11 +10,11 @@ public class Ejer03 {
   public static void main(String[] args) {
 
     String nombre    =  ("Margarita Benitez Vargas");
-    String direccion =  ("Calle Arielita s/n");
-    String telefono  =  ("555800952");
+    String direccion =  ("Calle Aristófanes 5");
+    String telefono  =  ("555000999");
     
     System.out.println("Mi nombre es: " + nombre);
-    System.out.println("Mi direccion es: " + direccion);
+    System.out.println("Mi dirección es: " + direccion);
     System.out.println("Mi teléfono es: " + telefono);
   }
 }

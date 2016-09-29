@@ -19,7 +19,7 @@ public class Ejer01 {
     int resta = x - y;
     System.out.println("La resta es igual a = " + resta);
     
-    int division = x + y;
+    int division = x / y;
     System.out.println("La división es igual a =  " + division);
     
     int multiplicacion = x * y;
