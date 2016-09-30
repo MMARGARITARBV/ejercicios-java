@@ -21,20 +21,27 @@
 public class Ejer12 {
   public static void main(String[] args) {
     
-    System.out.println(" \n CALCULA TU SALARIO SEMANAL \n "  );
+    System.out.println(" \nCALCULA LA NOTA MEDIA DESEADA DEL TRIMESTRE\n "  );
     
-    System.out.print("Introduce las horas trabajadas:  ");
-    double horasTrabajadas = Double.parseDouble(System.console().readLine());// entrada de datos (decimales por las medias y cuartos de hora)
+    System.out.print("Introduce la nota del primer examen:  ");
+    double primerExamen = Double.parseDouble(System.console().readLine());
     
-    double totalSalario  = horasTrabajadas * 12;
+    System.out.println("");
+    
+    System.out.print("Introduce la nota que quieres sacar en el segundo examen:  ");
+    double segundoExamen = Integer.parseInt(System.console().readLine());
+    
+    double media  = ((primerExamen * 0.40) + (segundoExamen *0.60));
         
     System.out.println("--------------------------- "  );
     System.out.println("       DETALLE SALARIO     \n"  );
     
-    System.out.println("HORAS TRABAJADAS: " + horasTrabajadas );
-    System.out.println("PRECIO HORA:      12€" );
-    System.out.println("---------------------------\n"  );
-    System.out.printf("TOTAL SALARIO:      %.1f€\n" , totalSalario);
+    System.out.printf("NOTA PRIMER EXAMEN: %.2f \n" , primerExamen );
+    System.out.printf("NOTA SEGUNDO EXAMEN: %.2f \n", segundoExamen );
+    System.out.println("---------------------------"  );
+    System.out.printf("TU MEDIA SERIA DE:   %.2f\n" , media);
+    
+  
     
     
   }
