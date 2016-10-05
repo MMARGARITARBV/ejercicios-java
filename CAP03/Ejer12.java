@@ -28,10 +28,10 @@ public class Ejer12 {
     
     System.out.println("");
     
-    System.out.print("Introduce la nota que quieres sacar en el segundo examen:  ");
-    double segundoExamen = Integer.parseInt(System.console().readLine());
+    System.out.print("Introduce la nota que quieres sacar DE MEDIA EN EL TRIMESTRE:  ");
+    double notaMediaTrimestre = Integer.parseInt(System.console().readLine());
     
-    double media  = ((primerExamen * 0.40) + (segundoExamen *0.60));
+    double segundoExamen  = notaMediaTrimestre * 100 - (primerExamen * 40)) / 60 ;
         
     System.out.println("--------------------------- "  );
     System.out.println("       DETALLE SALARIO     \n"  );
@@ -39,7 +39,7 @@ public class Ejer12 {
     System.out.printf("NOTA PRIMER EXAMEN: %.2f \n" , primerExamen );
     System.out.printf("NOTA SEGUNDO EXAMEN: %.2f \n", segundoExamen );
     System.out.println("---------------------------"  );
-    System.out.printf("TU MEDIA SERIA DE:   %.2f\n" , media);
+    System.out.printf("TU MEDIA SERIA DE:   %.2f\n" , notaMediaTrimestre);
     
   
     

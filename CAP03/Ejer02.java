@@ -19,11 +19,11 @@ public class Ejer02 {
       //System.out.print("introduce las Pesetas:");
     //double pesetas = Integer.parseInt (System.console().readLine());
     
-    double totalPesetas  = euro * 166.38; //operación
+    int totalPesetas  = (int) (euro * 166.38); //operación y realizo el casting porque PESETAS no tiene decimales y la operación es con decimales.
     
     //System.out.println("Euros introducidos:  " + euro + " \n ");
        
-    System.out.printf("RESULTADO = %.1f € es igual a %.2f Pesetas", euro, totalPesetas);
+    System.out.println("RESULTADO : " + euro + "€  es igual a " + totalPesetas + "pesetas");
         
   }
 }

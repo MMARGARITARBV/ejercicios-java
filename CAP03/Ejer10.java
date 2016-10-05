@@ -23,8 +23,8 @@ public class Ejer10 {
     
     System.out.println("\nOTRAS CONVERSIONES  \n"  );
     
-    System.out.printf("%.2f Mb = %.8f Gb \n", mb , gb );
-    System.out.printf("%.2f Mb = %.8f Tb", mb , tb );
+    //System.out.printf("%.2f Mb = %.8f Gb \n", mb , gb );
+    //System.out.printf("%.2f Mb = %.8f Tb", mb , tb );
         
   }
 }

@@ -19,7 +19,7 @@ public class Ejer09 {
     double pi = Math.PI ; // definiendo la variable pi y utilizando la clase MATH.PI para sacar el número pi
     double r  = 3.14 ;
        
-    double volumen = (((pi * (radio * radio)) * altura)/3) ;
+    double volumen = (((pi * (radio * radio)) * altura)/3) ; // podemos utilizar directamente la clase Math , incluso cuando mostramos el final.
     double volumenV2 = (((3.14 * (radio * radio)) * altura)/3);
     double volumenV3 = ((((radio * radio) * altura) * r) / 3 ) ;
     
@@ -30,9 +30,9 @@ public class Ejer09 {
     System.out.println("ALTURA: " + altura );
     System.out.printf("PI  %.3f \n ", Math.PI); // Mostrando el número PI
     System.out.println("---------------------------\n"  );
-    System.out.printf("VOLUMEN CONO OPCION MATH=  %.1f\n" , volumen);
-    System.out.printf("VOLUMEN CONO OPCION 3.14=  %.1f\n" , volumenV2); 
-    System.out.printf("VOLUMEN CONO OPCION FORMULA DIFERENTE =  %.1f\n" , volumenV3);
+    System.out.printf("VOLUMEN CON OPCION MATH=  %.1f\n" , volumen);
+    System.out.printf("VOLUMEN CON OPCION 3.14=  %.1f\n" , volumenV2); 
+    System.out.printf("VOLUMEN CON OPCION FORMULA DIFERENTE =  %.1f\n" , volumenV3);
     
     
   }
