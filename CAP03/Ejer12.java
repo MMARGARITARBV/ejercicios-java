@@ -31,7 +31,7 @@ public class Ejer12 {
     System.out.print("Introduce la nota que quieres sacar DE MEDIA EN EL TRIMESTRE:  ");
     double notaMediaTrimestre = Integer.parseInt(System.console().readLine());
     
-    double segundoExamen  = notaMediaTrimestre * 100 - (primerExamen * 40)) / 60 ;
+    double segundoExamen  = notaMediaTrimestre * 100 - (primerExamen * 40) / 60 ;
         
     System.out.println("--------------------------- "  );
     System.out.println("       DETALLE SALARIO     \n"  );
