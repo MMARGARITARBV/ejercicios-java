@@ -7,51 +7,54 @@
 public class Ejer07 {
   public static void main(String[] args) {
     
-    System.out.println(" \nCALCULA LA NOTA MEDIA DE TRES ASIGNATURAS\n "  );
+    System.out.println(" \nCALCULA LA NOTA MEDIA \n "  );
     
-    System.out.print("Introduce la nota del primer examen de FOL:  ");
-    double primerExamenFol = Double.parseDouble(System.console().readLine());
-    System.out.print("Introduce la nota del segundo examen de FOL:  ");
-    double segundoExamenFol = Double.parseDouble(System.console().readLine());
-    System.out.print("Introduce la nota del tercer examen de FOL:  ");
-    double tercerExamenFol = Double.parseDouble(System.console().readLine());
-    
-    System.out.println("");
-    
-    System.out.print("Introduce la nota del primer examen de PROGRAMACIÓN:  ");
-    double primerExamenProgra = Double.parseDouble(System.console().readLine());
-    System.out.print("Introduce la nota del segundo examen de PROGRAMACIÓN:  ");
-    double segundoExamenProgra = Double.parseDouble(System.console().readLine());
-    System.out.print("Introduce la nota del tercer examen de PROGRAMACIÓN:  ");
-    double tercerExamenProgra = Double.parseDouble(System.console().readLine());
-    
-    System.out.println("");
+    System.out.print("Introduce la nota del primer exámen:  ");
+    double primerExamen = Double.parseDouble(System.console().readLine());
+    if ((primerExamen < 0) || (primerExamen > 10)){
+      System.out.print("La nota del primer exámen no es correcta \n");
+    } else {
+      System.out.print("Introduce la nota del segundo exámen: ");
+      double segundoExamen = Double.parseDouble(System.console().readLine());
       
-    System.out.print("Introduce la nota del primer examen de BBDD:  ");
-    double primerExamenBbdd = Double.parseDouble(System.console().readLine());
-    System.out.print("Introduce la nota del segundo examen de BBDD:  ");
-    double segundoExamenBbdd = Double.parseDouble(System.console().readLine());
-    System.out.print("Introduce la nota del tercer examen de BBDD:  ");
-    double tercerExamenBbdd = Double.parseDouble(System.console().readLine());
-    
-    System.out.println("");
-    
-    double notaMediaFol  = (primerExamenFol + segundoExamenFol + tercerExamenFol) / 3;
-    double notaMediaProgra  = (primerExamenProgra + segundoExamenProgra + tercerExamenFol) / 3;
-    double notaMediaBbdd  = (primerExamenBbdd + segundoExamenBbdd + tercerExamenFol) / 3;
+      if ((segundoExamen < 0) || (segundoExamen > 10)){
+        System.out.print("La nota del segundo exámen no es correcta \n");
+      } else {
+        System.out.print("Introduce la nota del tercer exámen:  ");
+        double tercerExamen = Double.parseDouble(System.console().readLine());
         
-    System.out.println("--------------------------- "  );
-    System.out.println("       RESUMEN NOTAS     \n"  );
-    System.out.println("---------------------------"  );
-    
-    System.out.printf("Nota media FOL: %.2f \n" , notaMediaFol );
-    System.out.printf("Nota media PROGRAMACIÓN: %.2f \n", notaMediaProgra );
-    System.out.printf("Nota media BASES DE DATOS: %.2f\n" , notaMediaBbdd);
-    
+        if ((tercerExamen < 0) || (tercerExamen > 10)){
+          System.out.print("La nota del tercer exámen no es correcta \n");
+        }else{
+       
+        double notaMedia = (primerExamen + segundoExamen + tercerExamen) / 3;
+            
+        System.out.println("--------------------------- "  );
+        System.out.println("       RESUMEN NOTAS     \n"  );
+        System.out.println("---------------------------"  );
   
+        System.out.printf("Nota media : %.2f \n" , notaMedia);
+        
+            /*if ((primerExamen <= 0) || (primerExamen > 10)){ ASI LO VEMOS SIN SALIRNOS DEL PROGRAMA
+              System.out.print("La nota del primer exámen no es correcta \n");
+            } if ((segundoExamen <= 0) || (segundoExamen > 10)){
+              System.out.print("La nota del segundo exámen no es correcta \n");
+            } if ((tercerExamen <= 0) || (tercerExamen > 10)){
+            System.out.print("La nota del tercer exámen no es correcta \n");
+            } else {
+             
+            double notaMedia = (primerExamen + segundoExamen + tercerExamen) / 3;
+            
+            System.out.println("--------------------------- "  );
+            System.out.println("       RESUMEN NOTAS     \n"  );
+            System.out.println("---------------------------"  );
     
-    
-  }
+            System.out.printf("Nota media : %.2f \n" , notaMedia);
+            }*/
+        }
+      }  
+    }      
+  }      
 }
 
 
