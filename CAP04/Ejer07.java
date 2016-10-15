@@ -28,29 +28,13 @@ public class Ejer07 {
         }else{
        
         double notaMedia = (primerExamen + segundoExamen + tercerExamen) / 3;
-            
-        System.out.println("--------------------------- "  );
-        System.out.println("       RESUMEN NOTAS     \n"  );
-        System.out.println("---------------------------"  );
-  
-        System.out.printf("Nota media : %.2f \n" , notaMedia);
+                  
+          System.out.println("--------------------------- "  );
+          System.out.println("       RESUMEN NOTAS     \n"  );
+          System.out.println("---------------------------"  );
         
-            /*if ((primerExamen <= 0) || (primerExamen > 10)){ ASI LO VEMOS SIN SALIRNOS DEL PROGRAMA
-              System.out.print("La nota del primer exámen no es correcta \n");
-            } if ((segundoExamen <= 0) || (segundoExamen > 10)){
-              System.out.print("La nota del segundo exámen no es correcta \n");
-            } if ((tercerExamen <= 0) || (tercerExamen > 10)){
-            System.out.print("La nota del tercer exámen no es correcta \n");
-            } else {
-             
-            double notaMedia = (primerExamen + segundoExamen + tercerExamen) / 3;
-            
-            System.out.println("--------------------------- "  );
-            System.out.println("       RESUMEN NOTAS     \n"  );
-            System.out.println("---------------------------"  );
-    
-            System.out.printf("Nota media : %.2f \n" , notaMedia);
-            }*/
+          System.out.printf(" LA NOTA MEDIA ES : %.2f \n" , notaMedia);
+          
         }
       }  
     }      

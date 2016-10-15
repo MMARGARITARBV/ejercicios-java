@@ -1,6 +1,5 @@
 /**
- * Amplía el programa anterior para que diga la nota del boletín (insuficiente,
- * suficiente, bien, notable o sobresaliente).
+ * Realiza un programa que calcule la media de tres notas.
  * 
  * @author Margarita Benitez
  */
@@ -8,44 +7,52 @@
 public class Ejer08 {
   public static void main(String[] args) {
     
-    System.out.println(" \nCALCULA LA NOTA MEDIA DE TRES ASIGNATURAS\n "  );
+    System.out.println(" \nCALCULA LA NOTA MEDIA \n "  );
     
-    System.out.print("Introduce la nota del primer examen de FOL:  ");
-    double primerExamenFol = Double.parseDouble(System.console().readLine());
-    System.out.print("Introduce la nota del segundo examen de FOL:  ");
-    double segundoExamenFol = Double.parseDouble(System.console().readLine());
-    System.out.print("Introduce la nota del tercer examen de FOL:  ");
-    double tercerExamenFol = Double.parseDouble(System.console().readLine());
-    
-    System.out.println("");
-           
-    double notaMediaFol  = (primerExamenFol + segundoExamenFol + tercerExamenFol) / 3;
-        
-    System.out.println("--------------------------- "  );
-    System.out.println("       RESUMEN NOTAS     \n"  );
-    System.out.println("---------------------------"  );
-    
-    String calificacion = "nada"; // nota inicializar la variable con algún valor, sino me dice que tengo que inicializarla
+    System.out.print("Introduce la nota del primer exámen:  ");
+    double primerExamen = Double.parseDouble(System.console().readLine());
+    if ((primerExamen < 0) || (primerExamen > 10)){
+      System.out.print("La nota del primer exámen no es correcta \n");
+    } else {
+      System.out.print("Introduce la nota del segundo exámen: ");
+      double segundoExamen = Double.parseDouble(System.console().readLine());
       
-    if ((notaMediaFol <0) || (notaMediaFol > 10)){
-      System.out.printf(" LA NOTA INTRODUCIDA ES ERRONEA");
-    }else if (notaMediaFol >= 5 && notaMediaFol < 6){
-      calificacion = "SUFICIENTE";
-    }else if (notaMediaFol >= 6 && notaMediaFol < 7){
-      calificacion = "BIEN";
-    }else if (notaMediaFol >= 7 && notaMediaFol < 9){
-      calificacion = "NOTABLE";
-    }else if (notaMediaFol >= 9 && notaMediaFol <=10){
-      calificacion = "SOBRESALIENTE";
-    }else{
-      System.out.printf(" LA NOTA INTRODUCIDA ES ERRONEA");
-    }
+      if ((segundoExamen < 0) || (segundoExamen > 10)){
+        System.out.print("La nota del segundo exámen no es correcta \n");
+      } else {
+        System.out.print("Introduce la nota del tercer exámen:  ");
+        double tercerExamen = Double.parseDouble(System.console().readLine());
+        
+        if ((tercerExamen < 0) || (tercerExamen > 10)){
+          System.out.print("La nota del tercer exámen no es correcta \n");
+        }else{
+       
+        double notaMedia = (primerExamen + segundoExamen + tercerExamen) / 3;
+        String calificacion = "niidea" ; // preguntar porque motivo tengo que inicializarla
+            
+        if ((notaMedia >= 5) && (notaMedia < 6)){
+          calificacion = "SUFICIENTE";
+        } else if ((notaMedia >= 6) && (notaMedia < 7)){
+          calificacion = "BIEN";
+        } else if ((notaMedia >= 7) && (notaMedia < 9)){
+          calificacion = "NOTABLE";
+        } else if (notaMedia >= 9 && notaMedia <=10){
+          calificacion = "SOBRESALIENTE";
+        }else{
+          System.out.printf(" LA NOTA INTRODUCIDA ES ERRONEA");
+        }
     
-    
-    System.out.printf("Nota media FOL: %.2f \n" , notaMediaFol );
-    System.out.printf("" + calificacion );
-   
-  }
+          
+          System.out.println("--------------------------- "  );
+          System.out.println("       RESUMEN NOTAS     \n"  );
+          System.out.println("---------------------------"  );
+        
+          System.out.printf(" LA NOTA MEDIA ES : %.2f \n" , notaMedia);
+          System.out.printf(" LA CAFICACION ES : " + calificacion);
+        }
+      }  
+    }      
+  }      
 }
 
 
