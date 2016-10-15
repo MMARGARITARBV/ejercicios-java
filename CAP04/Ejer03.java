@@ -5,7 +5,7 @@
  *@author Margarita B. V
  */
  
-public class Ejercicio03 {
+public class Ejer03 {
   public static void main (String[] args){
     System.out.print("Introduzca el día de la semana en números (1-7): ");
     int dia = Integer.parseInt(System.console().readLine());
@@ -34,14 +34,12 @@ public class Ejercicio03 {
       case 7:
         diaSem = "Domingo";
         break;
-      default:
-        dia = 0;
-        break;
+      default: // default son todos los valores que no estan dentro de los case. 
+        dia = 0; 
     }
     
-    if (dia != 0){
-      System.out.print("El día número " + dia + " de la semana es el ");
-      System.out.println(diaSem);
+    if (dia != 0){ 
+      System.out.println("El día número " + dia + " de la semana es el " + diaSem);
     }else{
       System.out.println("Error: Día de la semana incorrecto.");
     }

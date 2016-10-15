@@ -8,21 +8,32 @@
  *@author Margarita B. V
  */
  
-public class Ejercicio04 {
+public class Ejer04 {
   public static void main (String[] args){
-    System.out.print("Introduzca el número de horas trabajadas: ");
-    double horasTotal = Double.parseDouble(System.console().readLine());
-    double horasExtra = 0.0;
+    System.out.print("Introduzca el número de horas trabajadas:  ");
+    String line = System.console().readLine();
+    System.out.println("");
     
-    if (horasTotal > 40){
-      horasExtra = horasTotal - 40;
-      horasTotal = 40;
+    double horas = 0.0 ; 
+    
+    try{ // convierte todos los caracteres a números y crea la exception para que no de error cuando introducimos caracteres especiales.
+      horas = Double.parseDouble(line);
+    }
+    catch(NumberFormatException e){
     }
     
-    System.out.println("Nº horas: " + horasTotal + " horas.");
-    System.out.println("Nº horas extra: " + horasExtra + " horas.");
-    System.out.println("Precio por hora: 12€/hora - 16€/hora extra.");
-    System.out.print("Salario semanal: ");
-    System.out.printf("%.2f€", ((horasTotal * 12) + (horasExtra * 16)));
+    double salario;
+    
+    if ((horas > 0) && (horas <= 40)) {
+      salario = horas * 12;
+      System.out.println("Nº horas: " + horas + " horas.");
+      System.out.printf("El salario semanal es igual a: %.2f€ ", salario);
+    } else if (horas > 40){
+      salario = 480 + ((horas - 40) * 16);
+      System.out.println("Nº horas: " + horas + " horas.");
+      System.out.printf("El salario semanal es igual a: %.2f€ ", salario);
+    } else {
+      System.out.println("Disculpa pero el número de horas es erróneo ");  
+    }    
   }
 }

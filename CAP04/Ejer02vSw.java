@@ -23,7 +23,7 @@ public class Ejer02vSw {
         System.out.print("Adios ..."); // y al salir nos dirá "adiós..."
         break;
       }
-      hora = 69;
+      hora = 25;
     }
     
     String saludo;
@@ -31,15 +31,6 @@ public class Ejer02vSw {
         
     switch (hora) {
       
-      /*case hora >= 6 && hora <=12: // ojo con los dos puntos
-        saludo = "¡buenos días!";
-        break; // se utiliza para que no siga realizando el proceso infinitamente
-      case (hora > 12 && hora <= 20):
-        saludo = "¡buenas tardes!";
-        break;
-      case ((hora > 20 && hora <= 24) || (hora >= 1 && hora < 6)):
-        saludo = "¡buenas noches!";
-        break;*/
         case 6: // al utilizar case no puedo incluir las operaciones. Es un valor donde no se pueden incluir operaciones
         case 7:
         case 8:
