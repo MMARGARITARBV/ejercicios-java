@@ -34,7 +34,7 @@ public class Ejer12 {
     double segundoExamen  = notaMediaTrimestre * 100 - (primerExamen * 40) / 60 ;
         
     System.out.println("--------------------------- "  );
-    System.out.println("       DETALLE SALARIO     \n"  );
+    System.out.println("       DETALLE NOTAS     \n"  );
     
     System.out.printf("NOTA PRIMER EXAMEN: %.2f \n" , primerExamen );
     System.out.printf("NOTA SEGUNDO EXAMEN: %.2f \n", segundoExamen );
