@@ -42,7 +42,7 @@ public class Ejer12 {
     System.out.println("b. 2");
     System.out.println("c. 1");
     respuesta = (System.console().readLine()).toLowerCase();
-    if (respuesta.equals("b")){
+    if (respuesta.equals("a")){
       puntos += 1;
     }
     
