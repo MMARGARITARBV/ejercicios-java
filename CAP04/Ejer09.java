@@ -23,12 +23,15 @@ public class Ejer09 {
     double comprobarTipoRaiz = (Math.pow(b, 2) - (4 * a * c)); //Variable para comprobar que la raíz cuadrada no es negativa
     
     if (comprobarTipoRaiz >= 0) {
-       System.out.println("x = " + (((b * -1) - Math.sqrt(comprobarTipoRaiz)) / (2 * a)) + " o x = " + (((b * -1) + Math.sqrt(comprobarTipoRaiz)) / (2 * a)));
+       System.out.print("x = " + (((b * -1) - Math.sqrt(comprobarTipoRaiz)) / (2 * a)) + " o x = " + (((b * -1) + Math.sqrt(comprobarTipoRaiz)) / (2 * a)));
     } else {
        System.out.println("Esta ecuación no tiene una solución real");
      }
+     
+    double resultadoPos = 0;
+    double resultadoNeg = 0;
     
-    /*if (a != 0){ // segunda forma mucho más larga y no es exacta
+    if (a == 0){ // segunda forma mucho más larga y no es exacta
       if (b != 0){
         if (c != 0){
           if (Math.pow(b,2)-(4*a*c) >= 0){
@@ -62,6 +65,6 @@ public class Ejer09 {
       System.out.printf("Resultado 1: %.2f\n", resultadoPos);
       System.out.printf("Resultado 2: %.2f", resultadoNeg);
       }
-    }*/
+    }
   }
 }

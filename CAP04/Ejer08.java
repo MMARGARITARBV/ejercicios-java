@@ -28,9 +28,11 @@ public class Ejer08 {
         }else{
        
         double notaMedia = (primerExamen + segundoExamen + tercerExamen) / 3;
-        String calificacion = "niidea" ; // preguntar porque motivo tengo que inicializarla
+        String calificacion = "niidea" ; // preguntar por qué tengo que inicializarla
             
-        if ((notaMedia >= 5) && (notaMedia < 6)){
+        if ((notaMedia >= 0) && (notaMedia < 5)){
+          calificacion = "INSUFICIENTE";
+        } else if ((notaMedia >= 5) && (notaMedia < 6)){
           calificacion = "SUFICIENTE";
         } else if ((notaMedia >= 6) && (notaMedia < 7)){
           calificacion = "BIEN";
@@ -48,7 +50,7 @@ public class Ejer08 {
           System.out.println("---------------------------"  );
         
           System.out.printf(" LA NOTA MEDIA ES : %.2f \n" , notaMedia);
-          System.out.printf(" LA CAFICACION ES : " + calificacion);
+          System.out.printf(" LA CALIFICACIÓN ES : " + calificacion);
         }
       }  
     }      

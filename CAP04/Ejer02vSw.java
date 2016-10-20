@@ -29,7 +29,7 @@ public class Ejer02vSw {
     String saludo;
     Boolean fecha_valida = true; // Boleanos
         
-    switch (hora) {
+    switch (hora) { // no puedo especificar rangos, tiene que ser un número entero o una caderna de carácteres
       
         case 6: // al utilizar case no puedo incluir las operaciones. Es un valor donde no se pueden incluir operaciones
         case 7:

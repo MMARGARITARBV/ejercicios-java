@@ -14,11 +14,11 @@ public class Ejer13 {
     int num1 = Integer.parseInt(System.console().readLine());
     System.out.print("Introduce el segundo número: ");
     int num2 = Integer.parseInt(System.console().readLine());
-    int aux = 0;
+    int aux ; // no hay necesidad de incializarla , aunque tambien se puede poner int aux = 0 ; sino se muestra por pantalla no hay necesidad de inicializarla
     
     if (num2 < num1){
-      aux = num1;
-      num1 = num2;
+      aux = num1; // aux puedes inicializarla dentro del if, si la muestras con print tienes que incializarla con = 0  
+      num1 = num2; 
       num2 = aux;
     }
     

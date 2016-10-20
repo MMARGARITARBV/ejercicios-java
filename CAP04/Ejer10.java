@@ -13,7 +13,7 @@ public class Ejer10 {
     String mes = (System.console().readLine()).toLowerCase();
     
     
-    String horoscopo = "";
+    String horoscopo = ""; // puedes poner algún dato o no, o simplemente inicializarla con las ""
    
     switch (mes){
       case "enero":
@@ -126,7 +126,7 @@ public class Ejer10 {
         break;
       default:
         mes = "";
-        break;
+        break; // CIERRA EL SWITCH
     }
     if (mes != "" && horoscopo != ""){
       System.out.print("Naciste el día " + dia + " de " + mes);

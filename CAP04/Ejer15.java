@@ -14,7 +14,7 @@ public class Ejer15 {
     char caracter = (System.console().readLine()).charAt(0); // utilizamos char para guardar un caracter en una variable y charAt es un método para mostrar los carácteres
     
     
-    System.out.println("¿Hacia donde quiere que este la punta de la pirámide?");
+    System.out.println("¿Hacia donde quiere que este la punta de la pirámide?, escriba la opcion con número: ");
     System.out.println("1. Arriba");
     System.out.println("2. Abajo");
     System.out.println("3. Derecha");
