@@ -12,8 +12,9 @@ public class Ejercicio17 {
     System.out.print("Introduzca el número : ");
       int numero = Integer.parseInt(System.console().readLine());
  
-      int resultado = (numero % 10); // cuando le haces el modulo 10 te saca la última cifra, si es la antepenúltima es 100 y así....
-      System.out.println("\nLa última cifra del numero introducido es: " + resultado);
+      int resultado = Math.abs(numero) % 10; // cuando le haces el modulo 10 te saca la última cifra, si es la antepenúltima es 100 y así....
+      // la funcion Math.abs nos saca el valor absoluto. Muestra el resultado en positivo
+      System.out.println("\nLa última cifra del numero " +  numero + "introducido es: " + resultado);
     
     System.out.println("\n PROBEMOS LA SEGUNDA OPCION \n"); 
     System.out.print("Introduzca un número entero: ");

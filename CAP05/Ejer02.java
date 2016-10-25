@@ -7,7 +7,7 @@
 public class Ejer02 {
   public static void main(String[] args) {
     
-    System.out.println(" \nMUESTRE LOS NÚMEROS MÚLTIPOS DE 5 DEL 0 A 100\n "  );
+    System.out.println(" \nMUESTRE LOS NÚMEROS MÚLTIPLOS DE 5 DEL 0 A 100\n "  );
     System.out.println("");
     
     int numero = 0; 
