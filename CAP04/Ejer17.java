@@ -5,7 +5,7 @@
  *@author Margarita B. V
  */
  
-public class Ejercicio17 {
+public class Ejer17 {
   public static void main (String[] args){
     
     System.out.println("\n VAMOS A ADIVINAR CUAL ES LA ÚLTIMA CIFRA DE UN NÚMERO ENTERO: \n");
