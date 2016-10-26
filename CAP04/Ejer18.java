@@ -5,7 +5,7 @@
  *@author Margarita B. V
  */
  
-public class Ejercicio18 {
+public class Ejer18 {
   public static void main (String[] args){
     System.out.print("Introduzca un número entero de 5 o menos cifras: ");
     String num = System.console().readLine();

@@ -1,12 +1,12 @@
 /**
- *Ejercicio 19: Realiza un programa que nos diga cuántos dígitos tiene un número
+ * Realiza un programa que nos diga cuántos dígitos tiene un número
  *entero que puede ser positivo o negativo. Se permiten números de hasta 5
  *dígitos.
  *
  *@author Margarita B. V
  */
  
-public class Ejercicio19 {
+public class Ejer19 {
   public static void main (String[] args){
     System.out.print("Introduzca un número entero, positivo o negativo ");
     System.out.print("(máximo 5 cifras): ");

@@ -5,7 +5,7 @@
  *@author Margarita B. V
  */
  
-public class Ejercicio20 {
+public class Ejer20 {
   public static void main (String[] args){
     System.out.print("Introduzca un número entero positivo de 5 cifras o");
     System.out.print(" menos: ");
