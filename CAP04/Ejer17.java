@@ -1,5 +1,5 @@
 /**
- *Ejercicio 17: Escribe un programa que diga cuál es la última cifra de un
+ *Escribe un programa que diga cuál es la última cifra de un
  *número entero introducido por teclado.
  *
  *@author Margarita B. V
@@ -20,6 +20,6 @@ public class Ejer17 {
     System.out.print("Introduzca un número entero: ");
     String num = System.console().readLine();
     System.out.print("\nLa última cifra del número introducido es: ");
-    System.out.print(num.charAt(num.length()-1)); // utilizamos una char y length(longitud), especificando la posición
+    System.out.print(num.charAt(num.length()-1)); // Método utilizado con un char para que nos dé la posición de un char y length(longitud)
   }
 }
