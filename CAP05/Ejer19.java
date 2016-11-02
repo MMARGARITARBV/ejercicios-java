@@ -19,12 +19,12 @@ public class Ejer19 {
     char caracter = (System.console().readLine()).charAt(0);
     
     for (int i = 0; i < altura; i++){
-      for (int espacios = 0; espacios < altura - (i+1); espacios++){
+      /*for (int espacios = 0; espacios < altura - (i+1); espacios++){
         System.out.print(" ");
       }
       for (int j = 0; j <= i * 2; j++){
         System.out.print(caracter);
-      }
+      }*/
       System.out.println();
     }
   }
