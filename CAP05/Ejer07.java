@@ -1,18 +1,25 @@
 /**
  * 
- * Muestra los números del 320 al 160, contando de 20 en 20 hacia atrás utilizando un bucle for .
+ * Realiza el control de acceso a una caja fuerte. La combinación será un
+ * número de 4 cifras. El programa nos pedirá la combinación para abrirla. Si no
+ * acertamos, se nos mostrará el mensaje “Lo siento, esa no es la combinación”
+ * y si acertamos se nos dirá “La caja fuerte se ha abierto satisfactoriamente”.
+ * Tendremos cuatro oportunidades para abrir la caja fuerte.
  * 
- *@author Margarita B. V
+ * @author Margarita B. V
  */
 
-public class Ejer06 {
+public class Ejer07 {
   public static void main(String[] args) {
     
-    System.out.println(" \nMUESTRA LOS NÚMEROS DEL 320 al 160, contando de 20 en 20 hacia atrás\n "  );
-    System.out.println("");
+    System.out.println("\n ** ADIVINA LA CONTRASEÑA DE MI CAJA FUERTE **  "  );
+      System.out.println("**********************************************"); 
     
-    // DO - WHILE
-     
+    System.out.println("NOTA : Tienes solo 4 posibilidades para abirla"  );
+    System.out.println("PISTA: La combinación es un número de 4 cifras"  );
+    System.out.println("\nINTRODUCE LA CONTRASEÑA:\n"  );
+    int contrasena = Integer.parseInt(System.console().readLine());
+       
     int numero = 320;
     
     do {
@@ -20,12 +27,12 @@ public class Ejer06 {
       numero -= 20;
     } while (numero >= 160); 
     
-    /*
+  
      * WHILE
-    int numero = 320; 
+    contraseña; 
        
-    while (numero >= 160) { // mientras número mayor o igual que 160
-      System.out.println(numero); //sentencia
+    while (contrasena == 1936) { // mientras número mayor o igual que 160
+      System.out.println("la contraseña es incorrecta"); //sentencia
       numero -= 20; // Realiza el bucle negativo hasta 160 de 20 en 20
     }
            

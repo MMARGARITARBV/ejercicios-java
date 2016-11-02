@@ -6,14 +6,14 @@
  *@author Margarita B. V
  */
  
-public class Ejercicio11 {
+public class Ejer11 {
   public static void main (String[] args){
     System.out.print("Introduzca un número: ");
     long numero = Long.parseLong(System.console().readLine());
     
     for (int i = 0; i < 5; i++){
-      System.out.print(numero + "\t" + (numero*numero) + "\t");
-      System.out.println(numero*numero*numero);
+      System.out.print( numero + "\t" + (numero * numero) + "\t");
+      System.out.println(numero * numero *numero);
       numero++;
     }
   }
