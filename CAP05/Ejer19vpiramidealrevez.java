@@ -7,6 +7,9 @@ public class Ejer19vpiramidealrevez {
     System.out.println("Este programa pinta una piramide apuntando hacia abajo.");
     System.out.print("Por favor, introduzca la altura de la pirámide: ");
     int alturafinal = Integer.parseInt(System.console().readLine());
+    
+    System.out.print("\n");
+    
     int altura = 1;
     int espacios = 1;
     int i = 1;
@@ -15,13 +18,13 @@ public class Ejer19vpiramidealrevez {
             
           while (altura <= (alturafinal)) {   //pinta la parte de arriba
             for (i = 1; i < espacios; i++) {
-              System.out.print(" ");
+              System.out.print("-");
             }
-            for (i = 1; i <= relleno; i++) {
+            for (i = 1; i <= relleno; i++) { //pinta los espacios 
               System.out.print("*");
             }
             System.out.println();
-            espacios++;
+            espacios++; 
             altura++;
             relleno = relleno - 2;;
           }

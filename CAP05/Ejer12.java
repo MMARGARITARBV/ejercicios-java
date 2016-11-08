@@ -8,7 +8,7 @@
  *@author Margarita B. V
  */
  
-public class Ejercicio12 {
+public class Ejer12 {
   public static void main (String[] args){
     System.out.println("Serie de Fibonacci");
     System.out.println("------------------");

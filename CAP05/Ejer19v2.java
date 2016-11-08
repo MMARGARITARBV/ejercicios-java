@@ -15,15 +15,15 @@ public class Ejer19v2 {
 
     while (altura <= alturainicial) {
       
-      for (i = 1; i <= espacios; i++) {
+      for (i = 1; i <= espacios; i++) { // inserta los espacios
         System.out.print("_");
       }
-      for (i = 1; i < altura * 2; i++) {
+      for (i = 1; i < altura * 2; i++) { // pinta los carácteres
         System.out.print(caracter);
       }
       System.out.println();
-      espacios--;
-      altura++;
+      espacios--; // resta los espacios conforme aumenta el la cantidad de caracteres
+      altura++; // aumenta la altura hasta que altura sea <= que la altura introducida por teclado.
     }
   }
 }

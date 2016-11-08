@@ -18,14 +18,15 @@ public class Ejer19 {
     System.out.print("Introduzca el carácter para pintar la pirámide: ");
     char caracter = (System.console().readLine()).charAt(0);
     
-    for (int i = 0; i < altura; i++){
+    for (int i = 0; i < altura; i++){ // introduce los espacios
       for (int espacios = 0; espacios < altura - (i+1); espacios++){
         System.out.print("_");
       }
-      for (int j = 0; j <= i * 2; j++){
+      for (int j = 0; j <= i * 2; j++){ // pinta los caracteres
         System.out.print(caracter);
       }
-      System.out.println();
+      System.out.println("*");
+    
     }
   }
 }
