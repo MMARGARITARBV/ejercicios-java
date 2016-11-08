@@ -24,20 +24,20 @@ public class Ejer15 {
     
     switch (eleccion){  // lo utilizamos por ser más util a la hora de programar
       case 1:
-        System.out.println("     "+ caracter);
+        System.out.println("     "+ caracter); // opcion ARRIBA
         System.out.println("    "+ caracter+caracter+caracter);
         System.out.println("   "+ caracter+caracter+caracter+caracter+caracter);
         System.out.println("  "+ caracter+caracter+caracter+caracter+caracter+caracter+caracter);
         System.out.println(" "+ caracter+caracter+caracter+caracter+caracter+caracter+caracter+caracter+caracter);
         break;
-      case 2:
+      case 2:           // OPCION ABAJO
         System.out.println(" "+ caracter+caracter+caracter+caracter+caracter+caracter+caracter+caracter+caracter);
         System.out.println("  "+ caracter+caracter+caracter+caracter+caracter+caracter+caracter);
         System.out.println("   "+ caracter+caracter+caracter+caracter+caracter);
         System.out.println("    "+ caracter+caracter+caracter);
         System.out.println("     "+ caracter);
         break;
-      case 3:
+      case 3:            // OPCION DERECHA
         System.out.println("     "+ caracter);
         System.out.println("    "+ caracter+caracter);
         System.out.println("   "+ caracter+caracter+caracter);
@@ -48,7 +48,7 @@ public class Ejer15 {
         System.out.println("    "+ caracter+caracter);
         System.out.println("     "+ caracter);
         break;
-      case 4:
+      case 4:            // OPCION IZQUIERDA
         System.out.println("     "+caracter+ "");
         System.out.println("    "+caracter+caracter+"");
         System.out.println("   "+caracter+caracter+caracter+"");
@@ -59,7 +59,7 @@ public class Ejer15 {
         System.out.println("    "+caracter+caracter+"");
         System.out.println("     "+caracter+"");
         break;
-      case 5:
+      case 5:           // OPCION ROMBO
         System.out.println("     "+ caracter);
         System.out.println("    "+ caracter+caracter+caracter);
         System.out.println("   "+ caracter+caracter+caracter+caracter+caracter);
