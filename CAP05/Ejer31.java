@@ -15,10 +15,11 @@ public class Ejer31 {
     
     while (altura <= alturaFinal) {
       if (altura != alturaFinal) {
-        System.out.println("*");
+        System.out.println("*"); // PINTA LA LINEA HORIZONTAL 
+        
       } else {
         for (int x = 1; x <= ancho; x++) {
-          System.out.print("*");
+          System.out.print("*");  // PINTA LA LINEA VERTICAL 
         }
       }
       altura++;

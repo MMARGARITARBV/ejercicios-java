@@ -8,30 +8,43 @@
  */
 public class Ejer32 {
   public static void main(String[] args) {
-    System.out.println("Este programa nos dirá cuáles son y cuaánto suman los dígitos pares.");
+    System.out.println("Este programa nos dirá cuáles son y cuánto suman los dígitos pares.");
     System.out.println("Los dígitos se mostrarán de izquierda a derecha.");
     
     System.out.print("Por favor, introducir un número: ");
     long num = Long.parseLong(System.console().readLine());
     
-    
-    
-    /*int x = 1;
-    int resto = 0;
-    int suma = 0;
-    
-    do {
-      resto = num % x;
-      if (resto == 0) {
-        suma++;
-      }
-      x++;
-    } while (x <= num);
-    
-    if ((suma == 2)||(num == 1)) {
-      System.out.println("El número " + num + " es un número primo.");
-    } else {
-      System.out.println("El número " + num + " no es un número primo.");*/
+    long numeroIntroducido = Long.parseLong(System.console().readLine());
+
+    int contador = 0;
+    long numero = numeroIntroducido;
+    long dividendo = 1;
+    long suma = 0;
+
+    while (numero > 0) {
+      numero = numero /10;
+      contador++;
     }
+
+    for (int x = 1; x < contador; x++) {
+      dividendo = dividendo * 10;
+    }
+
+    numero = 0;
+    System.out.print("Los dígitos pares son:");
+    
+    while (contador > 0) {
+      numero = numeroIntroducido / dividendo;
+      if ((numero % 2) == 0) {
+        System.out.print(" " + numero);
+        suma = suma + numero;
+      }
+      numeroIntroducido = numeroIntroducido % dividendo;
+      dividendo = dividendo / 10;
+      contador--;
+    }
+    
+    System.out.println();
+    System.out.print("La suma de los dígitos pares es: " + suma);
   }
 }
