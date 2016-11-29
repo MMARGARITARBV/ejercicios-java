@@ -16,7 +16,7 @@ public class Ejer21 {
     int num = 0;
     
       for (int x = 1; num >= 0; x++) {
-        System.out.print( x + "º número: ");
+        System.out.print( x + " Introduce un número: ");
         num = Integer.parseInt(System.console().readLine());
         if (num >= 0) {
           cantidad++;
