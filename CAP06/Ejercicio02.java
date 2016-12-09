@@ -10,68 +10,59 @@ podemos usar String.valueOf(n) .
 public class Ejercicio02 {
   public static void main(String[] args) {
     System.out.println("Este programa muestra, al azar, una carta de la baraja francesa.");
-    int palo = (int)(Math.random() * 4 )+ 1;
-    int carta = (int)(Math.random() * 13) + 1;
-    int numerodelacarta = 0;
-    String palodelacarta = "";
-    String letradelacarta = "";
+    int palo = (int)(Math.random() * 4 )+ 1; // rango palo aleatorio
+    int carta = (int)(Math.random() * 13) + 1; // rango carta aleatoria
+    String tipoCarta = ""; // ALmacena el tipo de carta
+    String tipoPalo = ""; // Almacena el tipo de palo
     
+    // Selecciona un tipo de palo aleatorio
     switch (palo) {
       case 1:
-      palodelacarta = "Picas";
-      break;
+        tipoPalo = "picas.";
+        break;
+        
       case 2:
-      palodelacarta = "Corazones";
-      break;
+        tipoPalo = "corazones.";
+        break;
+        
       case 3:
-      palodelacarta = "Diamantes";
-      break;
+        tipoPalo = "diamantes.";
+        break;
+        
       case 4:
-      palodelacarta = "Tréboles";
-      break;
-    }
-    switch (carta) {
-      case 1:
-      letradelacarta = "A";
-      break;
-      case 2:
-      numerodelacarta = 2;
-      break;
-      case 3:
-      numerodelacarta = 3;
-      break;
-      case 4:
-      numerodelacarta = 4;
-      break;
-      case 5:
-      numerodelacarta = 5;
-      break;
-      case 6:
-      numerodelacarta = 6;
-      break;
-      case 7:
-      numerodelacarta = 7;
-      break;
-      case 8:
-      numerodelacarta = 8;
-      break;
-      case 9:
-      numerodelacarta = 9;
-      break;
-      case 10:
-      letradelacarta = "J";
-      break;
-      case 11:
-      letradelacarta = "Q";
-      break;
-      case 12:
-      letradelacarta = "K";
-      break;
-    }
-    if (numerodelacarta == 0) {
-    System.out.println("El palo de la carta es " + palodelacarta + " y la letra es " + letradelacarta);
+        tipoPalo = "tréboles.";
+        break;
+        
+      default:
+        tipoPalo = "nada.";
+    }  
+    
+    // Selecciona un tipo de carta aleatoria si es igual a 1 o mayor que 10, para las cartas especiales
+    if ((carta == 1) || (carta > 10)) {
+      switch (carta) {
+        case 1:
+          tipoCarta = "As";
+          break;
+        
+        case 11:
+          tipoCarta = "J";
+          break;
+          
+        case 12:
+          tipoCarta = "Q";
+          break;
+          
+        case 13:
+          tipoCarta = "K";
+          break;
+          
+        default:
+          tipoCarta = "Nada";
+      }
+      
+      System.out.print("\nHa sacado el/la " + tipoCarta + " de " + tipoPalo);
     } else {
-      System.out.println("El palo de la carta es " + palodelacarta + " y el número es " + numerodelacarta);
+      System.out.print("\nHa sacado el " + carta + " de " + tipoPalo);
     }
   }
 }

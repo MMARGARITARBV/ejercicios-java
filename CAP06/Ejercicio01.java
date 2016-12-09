@@ -9,11 +9,16 @@ public class Ejercicio01 {
     System.out.println("Este programa muestra la tirada de tres dados.");
     int dado = 0;
     int suma = 0;
+    
+    // realizamos las tres tiradas de datos aleatoriamente, entre 1 y 6
     for (int  x = 1; x <= 3; x++) {
     dado = (int)(Math.random() * 6 ) + 1;
-    System.out.println("La tirada del " + x +"º dado es: " + dado);
+    System.out.println("La tirada del " + x +"º dado es: " + dado); // x nos dice la tirada por la que vamos
+    
+    //sumamos los valores de la tiradas
     suma = suma + dado;
     }
+    // mostramos el resultado de la suma
     System.out.println("La suma de las tiradas es: " + suma);
   }
 }
