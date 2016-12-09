@@ -9,46 +9,56 @@ public class Ejercicio03 {
     System.out.println("Este programa muestra, al azar, una carta de la baraja española.");
     int palo = (int)(Math.random() * 4 )+ 1;
     int carta = (int)(Math.random() * 11) + 1;
-    int numerodelacarta = 0;
-    String palodelacarta = "";
-    String letradelacarta = "";
+    String tipoCarta = ""; // ALmacena el tipo de carta
+    String tipoPalo = ""; // Almacena el tipo de palo
     
+    // Selecciona un tipo de palo aleatorio
     switch (palo) {
       case 1:
-      palodelacarta = "Espada";
-      break;
+        tipoPalo = "espadas.";
+        break;
+        
       case 2:
-      palodelacarta = "Basto";
-      break;
+        tipoPalo = "copas.";
+        break;
+        
       case 3:
-      palodelacarta = "Oro";
-      break;
+        tipoPalo = "bastos.";
+        break;
+        
       case 4:
-      palodelacarta = "Copa";
-      break;
-    }
-
-    switch (carta) {
-      case 1:
-      letradelacarta = "As";
-      break;
-      case 10:
-      letradelacarta = "Sota";
-      break;
-      case 11:
-      letradelacarta = "Caballo";
-      break;
-      case 12:
-      letradelacarta = "Rey";
-      break;
+        tipoPalo = "oros.";
+        break;
+        
       default:
-      numerodelacarta = carta;
-      break;
-    }
-    if (numerodelacarta == 0) {
-    System.out.println("El palo de la carta es " + palodelacarta + " y la figura es " + letradelacarta);
+        tipoPalo = "nada.";
+    }  
+    
+    // Selecciona un tipo de carta aleatoria si es igual a 1 o mayor que 7, para las cartas especiales
+    if ((carta == 1) || (carta > 7)) {
+      switch (carta) {
+        case 1:
+          tipoCarta = "As";
+          break;
+        
+        case 8:
+          tipoCarta = "Sota";
+          break;
+          
+        case 9:
+          tipoCarta = "Caballo";
+          break;
+          
+        case 10:
+          tipoCarta = "Rey";
+          break;
+          
+        default:
+          tipoCarta = "Nada";
+      }
+      System.out.print("\nHa sacado el/la " + tipoCarta + " de " + tipoPalo);
     } else {
-      System.out.println("El palo de la carta es " + palodelacarta + " y el número es " + numerodelacarta);
+      System.out.print("\nHa sacado el " + carta + " de " + tipoPalo);
     }
   }
 }
