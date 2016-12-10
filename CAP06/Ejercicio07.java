@@ -6,16 +6,21 @@ partidos y el pleno al quince (15 filas).
  */
 public class Ejercicio07 {
   public static void main(String[] args) {
+    
     System.out.println("Este programa muestra las apuestas de la quiniela.");
+    
     String apuestaQuiniela = " ";
     boolean plenoAlquince = false;
     
+    
+    // Genera aleatoriamente la quiniela con sus 14 filas y 3 columnas
     for (int i = 1; i <= 15; i++) {
       if ( i == 15) {
         System.out.print("Este es el pleno al quince: \t");
       } else {
-      System.out.print("Esta es la " + i + "º fila: \t\t");
+      System.out.print("Esta es la " + i + "º fila: \t\t"); // \t inserta un tabulador
       }
+      
       for (int x = 1; (x <= 3) && (!plenoAlquince); x++) {
         int apuesta = (int)(Math.random() * 4);
         switch (apuesta) {
