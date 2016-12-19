@@ -14,11 +14,11 @@ public class Ejercicio13 {
     int x = 1;
     
     // Generamos la tirada de dos dados hasta que ambos tengan el mismo valor
-    do {
+    do { // haz
       dadouno = (int)(Math.random() * 6 ) + 1;
       dadodos = (int)(Math.random() * 6 ) + 1;
       System.out.println("La tirada nº" + x + " del primer dado es: " + dadouno + " y el segundo es: " + dadodos);
       x++; // vuelve a hacer el bucle hasta que cumpla con la condición de que los dos dados tengan el mismo valor
-    } while (dadouno != dadodos); // mietras que dado 1 y dado dos tengan el mismo valor
+    } while (dadouno != dadodos); // mietras que dado 1 y dado 2 sean diferentes
   }
 }
