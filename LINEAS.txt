@@ -1,0 +1,88 @@
+﻿//SALIDA DE DATOS POR PANTALLA
+
+System.out.println("TEXTO CON SALTO DE LINEA");
+System.out.print("TEXTO SIN SALTO DE LINEA");
+System.out.printf("%-8s %-8s \n", "INGLES" , "CASTELLANO");// Los espacios entre los % cuentan como espacio más.
+System.out.printf("%.2f pesetas es = %.2f Euros", pesetas , euros); // Especificar la cantidad de DECIMALES.
+System.out.println(celeste +"Lunes:    \t" + a +"SIN\t"  +"SIN\t" +"SIN\t" + b + "FOL\t"+"FOL\t"+"FOL\t");  // TABULADOR
+System.out.printf("TOTAL FACTURA =  %-1s%-6s \n\n", (int) totalFactura ," Euros"); //CASTING de double a entero(int) 
+
+VARIABLES//
+
+int x = 000;
+int y = 000;
+
+String nombre  =  ("Margarita Benitez Vargas");
+
+String r = "\033[31m";
+String v = "\033[32m";
+String n = "\033[33m";
+String a = "\033[34m";
+String m = "\033[35m";
+String b = "\033[37m";
+String celeste = "\033[36m";
+
+double euro = 125 ;
+double total = (euro * 166.38);
+
+
+
+num[i] = Long.parseLong(System.console().readLine());
+
+
+LECTURA DE DATOS POR TECLADO//
+
+
+GEANY//
+
+System.out.println("Escribe un número:");
+int primerNumero = Integer.parseInt(System.console().readLine());
+double euro = Double.parseDouble(System.console().readLine());// entrada de datos (decimales)
+
+String diaDeLaSemana = System.console().readLine().toLowerCase();// ojo con toLower... el texto que compara tiene que ir en minúscula
+// .toUpperCase() tiene que ir el texto que compara con MAYUSCULAS, sino no lo lee y sale.
+
+//COMPARA CADENA DE CARACTERES
+
+if (dia.toLowerCase().equals("lunes")) {
+      System.out.println("A primera toca Sistemas Infromáticos");
+    } else if (dia.toLowerCase().equals("martes") || dia.toLowerCase().equals("miercoles")) {
+      System.out.println("A primera toca Programación");
+	}
+
+System.out.print("Por favor, introduce el día de la semana de lunes a viernes:  ");
+String dia = System.console().readLine().toLowerCase();
+
+String asignatura;
+
+switch (dia) {
+      case "lunes": // ojo con los dos puntos
+        asignatura = " SISTEMAS INFORMATICOS";
+        break; // se utiliza para que no siga realizando el proceso infinitamente
+      case "martes":
+        asignatura = " PROGRAMACIÓN";
+        break;
+      default: // se utiliza en el caso de que no cumpla ninguno de los casos
+        asignatura = "disculpa pero ese día no existe o no esta bien escrito";
+      }  
+	  
+NEATBEANS//
+
+System.out.println("Escribe un número:");
+double x = s.nextDouble();
+int pesetas = s.nextInt();
+
+System.out.println("Escribe un día de la semana");
+String dia = System.console().readLine();
+
+
+
+	
+
+
+
+
+   
+   
+
+

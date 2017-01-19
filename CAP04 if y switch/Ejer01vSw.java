@@ -40,7 +40,7 @@ public class Ejer01vSw {
         asignatura = "disculpa pero ese día no existe o no esta bien escrito";
       }  
        
-      System.out.println("El " + dia + " la primera asignatura del día es" + asignatura); // mostramos el resultado. 
+      System.out.println("El " + dia + " la primera asignatura del día es" + asignatura); // mostramos el resultado.
   }
 }
 
