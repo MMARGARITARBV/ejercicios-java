@@ -1,4 +1,7 @@
-﻿//SALIDA DE DATOS POR PANTALLA
+﻿//borrar datos consola
+cls
+
+//SALIDA DE DATOS POR PANTALLA
 
 System.out.println("TEXTO CON SALTO DE LINEA");
 System.out.print("TEXTO SIN SALTO DE LINEA");
@@ -24,7 +27,6 @@ String celeste = "\033[36m";
 
 double euro = 125 ;
 double total = (euro * 166.38);
-
 
 
 num[i] = Long.parseLong(System.console().readLine());

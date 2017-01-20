@@ -1,2 +1,25 @@
-INFO	?	main	2017-01-18T17:35:10.378Z	org.javacs.Main#connectToNode	Connected to parent using socket on port 55282
-INFO	?	main	2017-01-18T17:35:11.115Z	org.javacs.JavaLanguageServer#doLint	Lint [c:\Users\admin\Desktop\FP\PROGRAMACION\2015_2016\Github\ejercicios-java\EXAMENES\Antes2016\02\Ejemplo0204.java]
+SEVERE	?	main	2017-01-19T21:09:32.043Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Users\admin\Desktop\FP\PROGRAMACION\2015_2016\Github\ejercicios-java\EXAMENES\2016\B\Ejercicio02.java
+org.javacs.NoJavaConfigException: Can't find configuration file for c:\Users\admin\Desktop\FP\PROGRAMACION\2015_2016\Github\ejercicios-java\EXAMENES\2016\B\Ejercicio02.java
+	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:479)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:479)
+	at org.javacs.JavaLanguageServer.findTree(JavaLanguageServer.java:809)
+	at org.javacs.JavaLanguageServer.lambda$doHover$34(JavaLanguageServer.java:983)
+	at java.util.Optional.ifPresent(Unknown Source)
+	at org.javacs.JavaLanguageServer.doHover(JavaLanguageServer.java:982)
+	at org.javacs.JavaLanguageServer.access$000(JavaLanguageServer.java:31)
+	at org.javacs.JavaLanguageServer$1.hover(JavaLanguageServer.java:118)
+	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint._doAccept(LanguageServerEndpoint.xtend:130)
+	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.doAccept(LanguageServerEndpoint.xtend:117)
+	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend:114)
+	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend)
+	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.handleMessage(LanguageEndpoint.xtend:67)
+	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.lambda$connect$4(LanguageEndpoint.xtend:61)
+	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:46)
+	at io.typefox.lsapi.services.json.StreamMessageReader$1.apply(StreamMessageReader.java:44)
+	at io.typefox.lsapi.services.json.StreamMessageReader.handleMessage(StreamMessageReader.xtend:128)
+	at io.typefox.lsapi.services.json.StreamMessageReader.listen(StreamMessageReader.xtend:61)
+	at io.typefox.lsapi.services.transport.AbstractLanguageEndpoint.connect(LanguageEndpoint.xtend:60)
+	at org.javacs.Main.run(Main.java:150)
+	at org.javacs.Main.main(Main.java:69)
+
