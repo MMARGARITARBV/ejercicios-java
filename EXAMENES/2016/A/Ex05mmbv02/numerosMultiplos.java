@@ -8,7 +8,7 @@
  *
  * @author Margarita Benitez V
  */
-public class  Ex05mmbv2 {
+public class  numerosMultiplos {
   public static void main(String[] args) {
     System.out.print("Este programa muestra hasta 10 números Aleatorios, que deben ser múltiplos de 11, ");
     System.out.println("además deben estar comprendidos entre el 330 y el 550 ambos incluidos.\n");
