@@ -1,5 +1,13 @@
-﻿//borrar datos consola
+﻿//codigo UTF-8 = CHCP 65001
+
+//borrar datos consola
 cls
+
+//GITHUB
+
+git add . --all
+git commit -m "mensaje"
+git push
 
 //SALIDA DE DATOS POR PANTALLA
 
@@ -14,8 +22,10 @@ VARIABLES//
 
 int x = 000;
 int y = 000;
+int primerNumero = Integer.parseInt(System.console().readLine());
 
 String nombre  =  ("Margarita Benitez Vargas");
+String diaDeLaSemana = System.console().readLine();
 
 String r = "\033[31m";
 String v = "\033[32m";
@@ -27,9 +37,11 @@ String celeste = "\033[36m";
 
 double euro = 125 ;
 double total = (euro * 166.38);
+double euro = Double.parseDouble(System.console().readLine());
 
-
+long numeroIntroducido = Long.parseLong(System.console().readLine());
 num[i] = Long.parseLong(System.console().readLine());
+
 
 
 LECTURA DE DATOS POR TECLADO//

@@ -1,15 +1,11 @@
-SEVERE	?	main	2017-01-19T21:09:32.043Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Users\admin\Desktop\FP\PROGRAMACION\2015_2016\Github\ejercicios-java\EXAMENES\2016\B\Ejercicio02.java
-org.javacs.NoJavaConfigException: Can't find configuration file for c:\Users\admin\Desktop\FP\PROGRAMACION\2015_2016\Github\ejercicios-java\EXAMENES\2016\B\Ejercicio02.java
+SEVERE	?	main	2017-01-20T09:37:58.277Z	org.javacs.Main$4#onError	Can't find configuration file for c:\Users\admin\Desktop\FP\PROGRAMACION\2015_2016\Github\ejercicios-java\CAP08 funciones\MATEMATICAS\esCapicua.java
+org.javacs.NoJavaConfigException: Can't find configuration file for c:\Users\admin\Desktop\FP\PROGRAMACION\2015_2016\Github\ejercicios-java\CAP08 funciones\MATEMATICAS\esCapicua.java
 	at org.javacs.JavaLanguageServer.lambda$findCompiler$21(JavaLanguageServer.java:479)
 	at java.util.Optional.orElseThrow(Unknown Source)
 	at org.javacs.JavaLanguageServer.findCompiler(JavaLanguageServer.java:479)
-	at org.javacs.JavaLanguageServer.findTree(JavaLanguageServer.java:809)
-	at org.javacs.JavaLanguageServer.lambda$doHover$34(JavaLanguageServer.java:983)
-	at java.util.Optional.ifPresent(Unknown Source)
-	at org.javacs.JavaLanguageServer.doHover(JavaLanguageServer.java:982)
-	at org.javacs.JavaLanguageServer.access$000(JavaLanguageServer.java:31)
-	at org.javacs.JavaLanguageServer$1.hover(JavaLanguageServer.java:118)
-	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint._doAccept(LanguageServerEndpoint.xtend:130)
+	at org.javacs.JavaLanguageServer.autocomplete(JavaLanguageServer.java:1057)
+	at org.javacs.JavaLanguageServer$1.completion(JavaLanguageServer.java:108)
+	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint._doAccept(LanguageServerEndpoint.xtend:126)
 	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.doAccept(LanguageServerEndpoint.xtend:117)
 	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend:114)
 	at io.typefox.lsapi.services.transport.server.LanguageServerEndpoint.accept(LanguageServerEndpoint.xtend)

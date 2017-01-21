@@ -9,7 +9,7 @@
 public class plantilla {
   public static void main(String[] args) {
     
-    System.out.println(" \n NOMBRE PROGRAMA\n "  );
+    System.out.println("\n NOMBRE PROGRAMA\n"  );
     
    
    
