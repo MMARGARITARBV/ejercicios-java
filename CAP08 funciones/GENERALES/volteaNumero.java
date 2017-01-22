@@ -12,13 +12,13 @@ public class volteaNumero {
     System.out.println("\nESTE PROGRAMA DA LA VUELTA A UN NÚMERO\n"  );
     
     System.out.print("Introduce el número: ");
-    int numero = Integer.parseInt(System.console().readLine());
+    int numeroIntroducido = Integer.parseInt(System.console().readLine());
     
     int numeroReves = 0;
 
-    while (numero > 0) {
-        numeroReves = (numeroReves * 10) + (numero % 10);
-        numero = numero / 10;
+    while (numeroIntroducido > 0) {
+        numeroReves = (numeroReves * 10) + (numeroIntroducido % 10);
+        numeroIntroducido = numeroIntroducido / 10;
         }
         System.out.print(numeroReves + " \n");
   }
