@@ -42,7 +42,11 @@ double euro = Double.parseDouble(System.console().readLine());
 long numeroIntroducido = Long.parseLong(System.console().readLine());
 num[i] = Long.parseLong(System.console().readLine());
 
+DEVUELVE UN ENTERO
 
+//CONVIERTE STRING a ENTEROS. 
+
+int nuevoNumero =  Integer.parseInt(primerNumeroIntroducido + "" + segundoNumeroIntroducido); // CONCATENA CARACTERES
 
 LECTURA DE DATOS POR TECLADO//
 
