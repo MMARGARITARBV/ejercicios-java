@@ -8,7 +8,7 @@ carácter.
  * 
  * Array de una dimensión
  */
-public class Ejercicio08 {
+public class stringArrays {
   public static void main(String[] args) {
     System.out.println("Este programa muestra la media de temperatura de un mes con barras horizontales.");
     
@@ -35,6 +35,7 @@ public class Ejercicio08 {
         System.out.print("*");
       }
       // TERMINO IMPRIMIENDO LOS GRADOS DENTRO DEL FOR PRINCIPAL. 
+      
       System.out.print(temperatura[x] + "o");
       System.out.println();
     }

@@ -15,29 +15,36 @@ public class Ejercicio07 {
     
     int num[] = new int [100];
     
+    //generA 100 números aleatorios del 0 al 20
     for (int x = 0; x <= 99; x++) {
       num[x] = (int)(Math.random() * 21);
-    }     //guarda los números
-    
-    System.out.print("Los números son: ");
+    }     
+     //los muestra por pantalla separados por espacios.
+    System.out.print("Los numeros son: ");
     for (int x = 0; x <= 99; x++) {
       System.out.print(num[x] + " ");
-    }     //muestra los números
+    }    
     
     System.out.println();   
-    System.out.print("Por favor, introduzca un número del 0 al 20: ");
-    int valorUno = Integer.parseInt(System.console().readLine());
-    System.out.print("Por favor, introduzca el número que quiera introducir: ");
-    int valorDos = Integer.parseInt(System.console().readLine());
-    
-    System.out.print("Los números son: ");
+
+    //El programa pedirá el primer valor
+    System.out.print("Por favor, introduzca un numero del 0 al 20: ");
+    int primerValor = Integer.parseInt(System.console().readLine());
+
+    //El programa pedirá el segundo valor
+    System.out.print("Por favor, introduzca el numero que quiera introducir: ");
+    int segundoValor = Integer.parseInt(System.console().readLine());
+        
+    System.out.print("Los numeros son: ");
     for (int x = 0; x <= 99; x++) {
-      if (num[x] == valorUno) {
-        num[x] = valorDos;
+      //busca las ocurrencias que coincidan con el primer valor 
+      if (num[x] == primerValor) {
+       //y las guarda con el valor del segundoValor
+        num[x] = segundoValor;
         System.out.print("'" + num[x] + "'");
       } else {
         System.out.print(num[x] + " ");
-      }
-    }     //muestra los números nuevos
+      } //muestra los números nuevos
+    }    
   }
 }

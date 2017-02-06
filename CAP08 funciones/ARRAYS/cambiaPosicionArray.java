@@ -8,7 +8,7 @@ posición 0. Finalmente, muestra el contenido del array.
  * 
  * Array de una dimensión
  */
-public class Ejercicio06 {
+public class cambiaPosicionArray {
   public static void main(String[] args) {
     System.out.println("Este cambia las posiciones del array.");
     
@@ -31,6 +31,18 @@ public class Ejercicio06 {
     
     for (int x = 0; x <= 14; x++) {
      System.out.println("La posición " + x + " del array es: " + nuevo[x]);
+    }     //muestra los números del array nuevo
+
+    //ALTERNATIVO
+    int aux = num [14];
+    
+    for (int x = 14; x > 0; x--) {
+      num[x] = num[x - 1];
+    }    
+    num[0] = aux; //cambia los números de posición
+    
+    for (int x = 0; x <= 14; x++) {
+     System.out.println("La posición " + x + " del array es: " + num[x]);
     }     //muestra los números del array nuevo
   }
 }

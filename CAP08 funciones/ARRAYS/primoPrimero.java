@@ -9,7 +9,7 @@ ninguno. Al final se debe mostrar el array resultante.
  * 
  * Array de una dimensión
  */
-public class Ejercicio11 {
+public class primoPrimero {
   public static void main(String[] args) {
     System.out.println("Este genera un nuevo array con numeros primos.");
     
@@ -20,12 +20,12 @@ public class Ejercicio11 {
     
     //pida 10 números por teclado y que los almacene en un array.
       for (int x = 0; x < 10; x++) {
-        System.out.print("Por favor, introduzca un número: ");
+        System.out.print("Por favor, introduzca un numero: ");
         num[x] = Integer.parseInt(System.console().readLine());
       }   //pide los números
       
       //A continuación se mostrará el contenido de ese array junto al índice (0 – 9)
-      System.out.println("índice\t\t\t\tNúmero");
+      System.out.println("índice\t\t\t\tNumero");
       for (int x = 0; x < 10; x++) {
         System.out.print(x + "\t\t\t\t" + num[x]);
 
@@ -56,8 +56,8 @@ public class Ejercicio11 {
         contador = 0;
       } //pasa el resto de los números al resto de las posiciones
       
-      System.out.println("Así queda el nuevo array:");
-      System.out.println("índice\t\t\t\tNúmero");
+      System.out.println("Asi queda el nuevo array:");
+      System.out.println("indice\t\t\t\tNumero");
       for (int x = 0; x < 10; x++) {
         System.out.println(x + "\t\t\t\t" + nuevo[x]);
       } //Muestra el nuevo array

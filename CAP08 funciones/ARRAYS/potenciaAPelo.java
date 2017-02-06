@@ -9,7 +9,7 @@ contenido de los tres arrays dispuesto en tres columnas.
  * 
  * Array de una dimensión
  */
-public class Ejercicio04 {
+public class potenciaAPelo {
   public static void main(String[] args) {
     System.out.println("Este programa muestra el cuadrado y el cubo de numeros aleatrorios.");
 
@@ -19,7 +19,7 @@ public class Ejercicio04 {
     int cubo[] = new int [20];
     
     //Carga el array numero con valores aleatorios entre 0 y 100
-    for (int x = 0; x < 20; x++) {
+    for (int x = 0; x < numero.length; x++) {
       numero[x] = (int)(Math.random() * 101);
       
       //En el array cuadrado se deben almacenar los cuadrados de los valores que hay en el array numero
@@ -31,7 +31,7 @@ public class Ejercicio04 {
     }
     System.out.println("Número\t\tCuadrado\tCubo");
     
-    for (int x = 0; x < 20; x++) {
+    for (int x = 0; x < numero.length; x++) {
       System.out.print(numero[x] + "\t\t" + cuadrado[x] + "\t\t" + cubo[x]);
       System.out.println();
     }

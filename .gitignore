@@ -1,3 +1,5 @@
 # CLASES COMPILADAS
 *.class
 *.vscode
+/CAP07 Arrays/EjerciciosArray/nbproject/private/
+/CAP07 Arrays/EjerciciosArray/build/

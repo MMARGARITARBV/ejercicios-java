@@ -50,6 +50,9 @@ int nuevoNumero =  Integer.parseInt(primerNumeroIntroducido + "" + segundoNumero
 
 LECTURA DE DATOS POR TECLADO//
 
+//PULSE INTRO PARA CONTINUAR
+System.out.println("Pulse INTRO para empezar.");
+System.console().readLine();
 
 GEANY//
 
@@ -92,6 +95,41 @@ int pesetas = s.nextInt();
 
 System.out.println("Escribe un día de la semana");
 String dia = System.console().readLine();
+
+// ARRAYS
+
+int num[] = new int [12]; // ARRAY VACIO DE 12 POSICIONES
+
+char simbolo[] = new char [10];
+    
+    
+
+simbolo [0] = 'a';
+  
+simbolo [1] = 'x';
+    
+
+//METODOS ARRAY
+
+Largo array for(int i=0; i<numeros.length; i++){ // lo hará hasta que el largo del array sea menor que i
+
+Los arrays se pueden declarar, crear e inicializar en una misma línea, del siguiente modo
+
+	int[] numeros={2, -4, 15, -25};
+	String[] nombres={"Juan", "José", "Miguel", "Antonio"};
+
+Math.pow FUNCION Potencia, me pide dos argumentos, la base y el exponente. (int)(Math.pow(num[x],3));
+
+//API DE JAVA. Conjunto de clases, metodos , funciones... etc... 
+
+//IMPRIMIR ARRAY
+
+	for(int i=0; i<nombres.length; i++){
+		System.out.println(nombres[i]);
+	}
+int max = Math.max(num.length);
+int min = Math.min(num.length);
+
 
 
 

@@ -7,7 +7,7 @@
  * 
  * Array de una dimensión
  */
-public class Ejercicio05 {
+public class maxYminArray {
   public static void main(String[] args) {
     System.out.println("Este programa lee numeros y muestra si es minimo o maximo.");
     
@@ -21,7 +21,7 @@ public class Ejercicio05 {
 
     
     // pido los numeros al usuario y los cargo en el array
-    for (int x = 0; x < 10; x++) {
+    for (int x = 0; x < num.length; x++) {
       System.out.print("Por favor, introduzca un numero: ");
       num[x] = Integer.parseInt(System.console().readLine());
       if (x == 0) {
@@ -39,7 +39,7 @@ public class Ejercicio05 {
     //muestre los números introducidos junto con las palabras “máximo y “mínimo
     //al lado del máximo y del mínimo respectivamente.
 
-    for (int x = 0; x < 10; x++) { // muestro el array
+    for (int x = 0; x < num.length; x++) { // muestro el array
       System.out.print("La posicion " + x + " del array es: " + num[x]);
       if (num[x] == max) {
         System.out.print(" maximo");

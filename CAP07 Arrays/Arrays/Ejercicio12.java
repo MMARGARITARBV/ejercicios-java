@@ -1,8 +1,8 @@
 /**
  * Realiza un programa que pida 10 números por teclado y que los almacene en un array. A
-continuación se mostrará el contenido de ese array junto al índice (0 – 9). Seguidamente el
-programa pedirá dos posiciones a las que llamaremos “inicial” y “final”. Se debe comprobar
-que inicial es menor que final y que ambos números están entre 0 y 9. El programa deberá
+* continuación se mostrará el contenido de ese array junto al índice (0 – 9). Seguidamente el
+* programa pedirá dos posiciones a las que llamaremos 'inicial' y 'final'. Se debe comprobar
+*que inicial es menor que final y que ambos números están entre 0 y 9. El programa deberá
 colocar el número de la posición inicial en la posición final, rotando el resto de números
 para que no se pierda ninguno. Al final se debe mostrar el array resultante.
  *
@@ -30,6 +30,8 @@ public class Ejercicio12 {
       System.out.print("Por favor, introduzca una posición final: ");
       int posFinal = Integer.parseInt(System.console().readLine());
       
+      // Se debe comprobar que inicial es menor que final y que ambos números están entre 0 y 9.
+
       if ((posInicial > posFinal) || (posInicial < 0) || (posInicial > 9) || (posFinal < 0) || (posFinal > 9)) {
         System.out.print("Los datos introducidos no son correctos.");
         System.out.print("La posición inicial debe ser menor a la final y ambos deben estar entre 0 y 9.");
@@ -42,7 +44,8 @@ public class Ejercicio12 {
           }
           System.out.println();
           
-          
+          //rota los últimos a partir de la posicion final + 1
+
           nuevo[posFinal] = num[posInicial];
           nuevo[0] = num [9];
           int i = posFinal;
@@ -50,11 +53,11 @@ public class Ejercicio12 {
           for (int x = (posFinal + 1); x < 10; x++) {
             nuevo[x] = num[i];
             i++;
-          } //rota los últimos a partir de la posicion final + 1
+          } 
           
           i = 0;
           
-          
+          //rota los primeros números
           for (int x = 1; x < (posFinal); x++) {
             if (x == posInicial) {
               nuevo[x] = num[posInicial - 1];
@@ -63,7 +66,7 @@ public class Ejercicio12 {
               nuevo[x] = num[i];
               i++;
             }
-          } //rota los primeros números
+          } 
           
           //Muestra el array ordenado
           System.out.print("El array final es: ");

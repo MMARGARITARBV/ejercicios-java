@@ -8,7 +8,7 @@ restantes. Utiliza arrays auxiliares si es necesario.
  * 
  * Array de una dimensión
  */
-public class Ejercicio10 {
+public class ordenaArrayPrimeroPares {
   public static void main(String[] args) {
     System.out.println("Este genera un nuevo array con numero pares seguidos de impares.");
     
@@ -26,6 +26,7 @@ public class Ejercicio10 {
     for (int x = 0; x < 20; x++) {
       System.out.print(num[x] + " ");
     }
+    System.out.println();
     System.out.println();
     
     //indicamos simplemente el nombre del array que queremos recorrer y en qué variable 
